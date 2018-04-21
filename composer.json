@@ -1,0 +1,51 @@
+{
+    "name": "barisbora/iyzico",
+    "description": "IYZICO API Laravel Bridge",
+    "keywords": [
+        "barisbora",
+        "iyzico",
+        "iyzipay",
+        "laravel"
+    ],
+    "homepage": "https://github.com/barisbora/iyzico",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Barış Bora",
+            "email": "baris.bora@itu.edu.tr",
+            "homepage": "https://github.com/barisbora",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.0",
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.1|^7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "barisbora\\Iyzico\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "barisbora\\Iyzico\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "barisbora\\Iyzico\\IyzicoServiceProvider"
+            ]
+        }
+    }
+}
